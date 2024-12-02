@@ -1,0 +1,48 @@
+.required::after {
+    content: " *";
+    color: red;
+}
+form {
+    text-align: left;
+}
+.form-group { 
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.form-group div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.form-group label {
+    flex: 0 0 100px;
+    text-align:right ;
+    margin-top: 10px;
+}
+.form-group input {
+    width: 250px;
+    margin-top: 10px;
+    flex: 1;
+}
+.form-actions {
+    justify-content: space-between;
+    width: 50%;
+}
+.form-actions input {
+    width: 400px;
+    margin: 0 5px;
+    flex: 1;
+}
+input {
+    background-color: #ffffff;
+    color: black;
+    border: groove;
+    }
+fieldset {
+    width: 400px;
+    justify-items: flex-start;
+}

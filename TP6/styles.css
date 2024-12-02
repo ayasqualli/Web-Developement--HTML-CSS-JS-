@@ -1,0 +1,182 @@
+.spacer{
+    height: 50px;
+    width: auto;
+}
+
+.element-1{
+    width:100%;
+}
+
+.element-1 li{
+    background-color: rgb(247, 156, 156);
+    padding: 5px;
+}
+
+.element-1 ol{
+    padding: 10px;
+    background-color: rgb(249, 79, 79);
+    color: maroon;
+    padding: 20px;
+    list-style-type:decimal;
+    margin: 0;
+}
+
+.element-2{
+    padding: 10px;
+    width: 100%;
+    background-color: rgb(58, 65, 251);
+}
+.element-2 ul{
+    color: black;
+    padding: 20px;
+    list-style-type: disc;
+    margin: 0;
+}
+
+.element-2 li{
+    margin-bottom: 10px;
+    background-color: rgba(171, 126, 251, 0.8);
+    margin: 10px;
+    position: relative;
+    padding-left: 10px;
+}
+
+.element-3 table {
+    width: 100%;
+    border: 3px solid black;
+  }
+  
+.element-3 th, td {
+    border: 2px solid green;
+    padding: 10px;
+    text-align: center;
+}
+
+.element-3 th {
+    font-weight: bold;
+}
+
+.element-4{
+    font-family:Arial, Helvetica, sans-serif;
+    align-self: center;
+    width: 80%;
+}
+
+.element-4 table{
+    width: 100%;
+    background-color: #cccccc;
+    border: none;
+}
+.element-4 th{
+    text-align: center;
+    background-color: #aaa9a9;
+    height: 20px;
+    border: none;
+    font-size: 15px;
+    margin: 0;
+}
+
+.element-4 td{
+    text-align: left;
+    border: none;
+}
+
+.pricing-container {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.pricing-container h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.price {
+    font-size: 32px;
+    color: #333;
+}
+
+.price span {
+    font-size: 16px;
+    color: #777;
+}
+
+.pricing-container ul {
+    list-style: none;
+    padding: 0;
+    
+}
+
+.pricing-container li {
+    width: 100%;
+    text-align: center;
+    border-top : 0.5px solid #cccc;
+    border-bottom: 0.5px solid #cccc;
+    height: 30px;
+    flex-wrap: wrap;
+}
+
+.pricing-card-starter button, p {
+    background-color: rgb(255, 157, 0);
+    border: none;
+    width: 100%;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.pricing-card-basic button, p {
+    background-color: rgba(4, 4, 186, 0.81);
+    border: none;
+    width: 100%;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.pricing-card-premium button, p {
+    background-color: rgb(67, 206, 79);
+    border: none;
+    width: 100%;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.pricing-card-master button, p {
+    background-color: rgb(84, 202, 238);
+    border: none;
+    width: 100%;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+
+.pricing-card-starter{
+    background-color: #f4f4f4;
+    width: 250px;
+    text-align: center;
+    border-right:1px solid #cccccc;
+    border-left:1px solid #cccccc;
+}
+
+.pricing-card-basic{
+    background-color: #f4f4f4;
+    width: 250px;
+    text-align: center;
+    border-right:1px solid #cccccc;
+    border-left:1px solid #cccccc;
+}
+.pricing-card-premium{
+    background-color: #f4f4f4;
+    width: 250px;
+    text-align: center;
+    border-right:1px solid #cccccc;
+    border-left:1px solid #cccccc;
+}
+.pricing-card-master{
+    background-color: #f4f4f4;
+    width: 250px;
+    text-align: center;
+    border-right:1px solid #cccccc;
+    border-left:1px solid #cccccc;
+}

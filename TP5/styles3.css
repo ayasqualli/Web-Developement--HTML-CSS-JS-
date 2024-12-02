@@ -1,0 +1,54 @@
+
+p.root {
+    color: blue;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+
+div.root-div {
+    color: black;
+
+}
+
+
+p.nested-p {
+    color: green;
+    
+}
+
+
+ol {
+    color: black;
+}
+
+li {
+    color: black;
+}
+
+
+li:nth-child(1) p {
+    color: purple;
+    font-weight: 500;
+    
+}
+
+li:nth-child(2) {
+    color: olive;
+}
+
+li:nth-child(3) {
+    color: olive;
+}
+
+
+p.red {
+    color: red;
+    font-weight: 550px;
+}
+
+
+p.div-root {
+    color: black;
+    margin-bottom: 0px;
+}

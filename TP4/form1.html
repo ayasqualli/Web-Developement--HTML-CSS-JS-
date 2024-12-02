@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form1</title>
+    <meta charset="utf-8">
+    <style>
+        html * {
+            font-family: Arial;
+        }
+        form {
+            text-align: left;
+        }
+        .form-group {
+            display: flex;
+            justify-content: space-between;
+            width: 55%;
+            margin-bottom: 10px;
+        }
+        .form-group label {
+            flex: 1;
+            text-align: left;
+            margin-right: 10px;
+        }
+        .form-group input {
+            text-align: center;
+            flex: 2;
+        }
+        .form-actions {
+            display: flex;
+            justify-content: left;
+            width: 100%;
+        }
+        .form-actions input {
+            margin: 0 5px;
+        }
+        input {
+            background-color: #908f8f;
+            color: black;
+            border: none;
+        }
+        input[type=button], input[type=submit], input[type=reset] {
+            background-color: #908f8f;
+            border: none;
+            align-items: left;
+            border-radius: 8px;
+            padding: 8px 24px;
+            font-weight: 600;
+            margin: 8px 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1><strong>HTML Form</strong></h1>
+        <form name="HTML Form" class="form-container">
+            <div class="form-group">
+                <label for="f_name">First Name: </label>
+                <input type="text" id="f_name" name="f_name">
+            </div>
+            <div class="form-group">
+                <label for="l_name">Last Name: </label>
+                <input type="text" id="l_name" name="l_name">
+            </div>
+            <div class="form-group">
+                <label for="date_of_birth">Date of Birth: </label>
+                <input type="date" id="date_of_birth" name="date_of_birth">
+            </div>
+            <div class="form-group">
+                <label for="email">Email id: </label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="num">Mobile Number: </label>
+                <input type="text" id="num" name="num">
+            </div>
+            <br>
+            <div class="form-actions">
+                <input type="submit" value="SUBMIT">
+                <input type="reset" value="RESET">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

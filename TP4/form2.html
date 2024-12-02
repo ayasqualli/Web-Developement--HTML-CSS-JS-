@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Form 2</title>
+    <meta charset="utf-8" />
+    <style>
+      .form-group {
+        display: flex;
+        justify-content: flex-start;
+        width: 55%;
+        margin-bottom: 10px;
+      }
+      .form-group label {
+        flex: 0 0 30%;
+        text-align: left;
+        margin-right: 10px;
+      }
+      .form-group input {
+        flex: 1;
+        border: 1px groove rgb(99, 121, 244);
+        margin-right: 10px;
+      }
+      .form-group select {
+        text-align: center;
+        width: 40%;
+        border: 1px groove rgb(99, 121, 244);
+        margin-right: 10px;
+      }
+      select {
+        border: 1px groove rgb(99, 121, 244);
+        width: 20%;
+        margin-bottom: 10px;
+      }
+      .form-group-column{
+        margin-top: 10px;
+        width: 100px;
+      }
+      .radio-group {
+        display: flex;
+        flex-direction: column;
+        text-align: left; /* Align items horizontally */ /* Evenly distribute space between items */
+        width: 50%; /* Ensure it takes full width */
+      }
+      .radio-item {
+        display: flex;
+        justify-content:right;
+         /* Space between items */
+      }
+
+    </style>
+  </head>
+  <body>
+    <div align="center">
+      <p style="font-size: 35px">Novell Services Login</p>
+      <form name="novell form">
+        <div class="form-group">
+          <label for="username">Username: </label>
+          <input type="text" id="username" name="username" />
+        </div>
+        <div class="form-group">
+          <label for="password">Password: </label>
+          <input type="text" id="password" name="password" />
+        </div>
+        <div class="form-group">
+          <label for="city">City of Employement</label>
+          <input type="text" id="city" name="city" />
+        </div>
+        <div class="form-group">
+          <label for="server">Web server: </label>
+          <select id="server" name="server">
+            <option value="default" selected>--Chose a server--</option>
+            <option value="usa">USA</option>
+            <option value="eur">Europe</option>
+            <option value="afr">Africa</option>
+            <option value="as">Asia</option>
+            <option value="aus">Australia</option>
+          </select>
+        </div>
+        <div class="form-group">
+            <div class="form-group-column">
+                <label>Please specify your role</label>
+            </div>
+            <div class="radio-group">
+                <div class="radio-item">
+                    <input type="radio" id="admin" name="role" value="admin">
+                    <label for="admin">Admin</label>
+                </div>
+                <div class="radio-item">
+                    <input type="radio" id="engineer" name="role" value="engineer">
+                    <label for="engineer">Engineer</label>
+                </div>
+                <div class="radio-item">
+                    <input type="radio" id="manager" name="role" value="manager">
+                    <label for="manager">Manager</label>
+                </div>
+                <div class="radio-item">
+                    <input type="radio" id="guest" name="role" value="guest">
+                    <label for="guest">Guest</label>
+                </div>
+        </div>
+      </form>
+  </body>
+</html>

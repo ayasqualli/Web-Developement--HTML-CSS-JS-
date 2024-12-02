@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Inscription - My Peugeot-Sport</title>
+</head>
+<body>
+    <div class="container">
+        <h1>S'inscrire</h1>
+        <form>
+            <div class="form-group">
+                <label for="pseudo">Pseudonyme <span class="required">[*]</span></label>
+                <input type="text" id="pseudo" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email <span class="required">[*]</span></label>
+                <input type="email" id="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="confirm-email">Confirmation email <span class="required">[*]</span></label>
+                <input type="email" id="confirm-email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Mot de passe <span class="required">[*]</span></label>
+                <input type="password" id="password" required>
+            </div>
+
+            <div class="form-group">
+                <label for="confirm-password">Confirmation mot de passe <span class="required">[*]</span></label>
+                <input type="password" id="confirm-password" required>
+            </div>
+
+            <div class="form-group">
+                <label for="avatar">Avatar</label>
+                <input type="file" id="avatar">
+            </div>
+
+            <div class="form-group">
+                <label for="comment">Commentaire</label>
+                <textarea id="comment" rows="5"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="language">Langue <span class="required">[*]</span></label>
+                <select id="language">
+                    <option value="fr">Français</option>
+                </select>
+            </div>
+
+            <h2>Mes informations personnelles</h2>
+
+            <div class="form-group">
+                <label for="name">Nom <span class="required">[*]</span></label>
+                <input type="text" id="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="surname">Prénom <span class="required">[*]</span></label>
+                <input type="text" id="surname" required>
+            </div>
+
+            <div class="form-group">
+                <label for="dob">Date de naissance (jj/mm/aaaa) <span class="required">[*]</span></label>
+                <input type="date" id="dob" required>
+            </div>
+
+            <div class="form-group">
+                <label for="country">Pays</label>
+                <input type="text" id="country">
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Téléphone</label>
+                <input type="tel" id="phone">
+            </div>
+
+            <div class="form-group">
+                <label>
+                    <input type="checkbox"> J'accepte de recevoir des sms gratuitement
+                </label>
+            </div>
+            <div class="form-group">
+                <label>
+                    <input type="checkbox"> J'accepte de recevoir des emails de Peugeot Sport
+                </label>
+            </div>
+
+            <h2>Choisissez votre type de profil</h2>
+
+            <div class="form-group">
+                <label for="profile-type">Type</label>
+                <input type="text" id="profile-type" value="Public">
+            </div>
+
+            <div class="form-group">
+                <label for="member-number">N° d'adhérent Pass</label>
+                <input type="text" id="member-number">
+            </div>
+
+            <div class="form-group">
+                <label for="verification-code">Code de vérification</label>
+                <input type="text" id="verification-code">
+            </div>
+            <img src="captcha.png" alt="Captcha Image">
+            <button type="button">Recharger l'image</button>
+
+            <button type="submit">S'inscrire</button>
+        </form>
+        <p>Les champs <span class="required">[*]</span> sont obligatoires</p>
+    </div>
+</body>
+</html>

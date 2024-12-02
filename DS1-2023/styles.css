@@ -1,0 +1,290 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.banner-div {
+  height: 250px; /* Full viewport height */
+  width: 100%; /* Full width */
+  background-image: url("atis.jpg");
+  background-blend-mode:soft-light;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex; /* Use flexbox for centering */
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  text-align: center; /* Center text */
+  color: white;
+}
+
+.banner-div h1 {
+  font-size: 35px;
+  text-shadow: 2px 2px black;
+  margin: 0; /* Remove default margin */
+}
+
+.banner-div p {
+  font-size: 20px;
+  text-shadow: 0px 3px  black; /* Adjust font size */
+  margin: 5px 0; /* Add some spacing */
+}
+
+.navbar {
+  background-color: rgb(5, 87, 211); /* Navbar background color */
+  padding: 1px; /* Padding around navbar */
+}
+
+.navbar ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove padding */
+  display: flex; /* Use flexbox for horizontal layout */
+  justify-content: left; /* Center items */
+}
+
+.navbar li,
+a,
+dropbtn {
+  font-weight: 550;
+  margin: 0 15px; /* Spacing between items */
+  color: white; /* Text color */
+  cursor: pointer; /* Pointer cursor on hover */
+  text-decoration: none;
+}
+
+.navbar li a:hover,
+.navbar li.dropdown:hover a:hover {
+  /* Corrected selector */
+  background-color: rgb(5, 87, 211);
+}
+.navbar .dropdown-content {
+  background-color: white;
+  color: black;
+  text-decoration: none;
+}
+
+.navbar li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none; /* Initially hidden */
+  position: absolute;
+  background-color: white; /* Optional: Set background color */
+  z-index: 1; /* Ensure it appears above other elements */
+}
+
+.dropdown-content a {
+  display: block; /* Change to block to stack items vertically */
+  padding: 8px 16px; /* Optional: Add padding for better spacing */
+  text-decoration: none; /* Remove underline */
+  color: black; /* Set text color */
+}
+
+.navbar li.dropdown:hover .dropdown-content {
+  display: block; /* Show dropdown on hover */
+}
+
+.dropbtn {
+  position: relative; /* Position relative for the arrow */
+}
+
+.dropbtn::after {
+  content: ""; /* Create an empty content */
+  position: absolute; /* Position it absolutely */
+  top: 65%; /* Center vertically */
+  right: -15px; /* Adjust as needed for spacing */
+  transform: translateY(-50%); /* Center the arrow */
+  border: solid transparent; /* Create a transparent border */
+  border-width: 5px; /* Adjust size of the arrow */
+  border-top-color: white; /* Color of the arrow */
+}
+
+.content {
+  margin-bottom: 30px;
+  width: 90%;
+  box-shadow: 5px 5px 5px #cccccc  ;
+  align-items: center;
+  margin-top: 5px;
+  margin: 0 auto;
+  display: flex; /* Use flexbox for layout */
+  flex-direction: row;
+  border: 2px ridge #cccccc;
+}
+
+.side-content {
+  max-width: 300px;
+  flex: 3;
+  padding: 10px;
+  background-color: white;
+}
+
+.welcome {
+  padding: 5px;
+  width: 1000px;
+  background-color: white; /* Add padding for better spacing */
+  text-align: left;
+  font-size: 20px;
+  border-right: 2px solid #ccc;
+  border-bottom: none;
+  border-left: none;
+  border-top: none;
+  padding-top: 0;
+  line-height: 1.5; /* Increased line height for more space between lines */
+  letter-spacing: 0.5px; /* Increased letter spacing for more space between words */
+}
+
+.key-dates {
+  flex: 1;
+}
+
+.welcome h2,
+.key-dates h2,
+.sponsorship h2,
+.publication h2,
+.past-atis h2,
+.keynotes h2 {
+  width: 100%;
+  padding: 2px;
+  text-shadow: 1px 1px black;
+  border: 1px groove;
+  color: white;
+  font-weight: 300;
+  font-size: 25px;
+  background-color: rgb(5, 87, 211);
+}
+
+.sponsor-logos,
+.publication-logos {
+  display: flex; /* Use flexbox for horizontal layout */
+  justify-content: center; /* Center logos */
+  flex-wrap: wrap; /* Allow wrapping to next line */
+  margin-top: 20px; /* Space above logos */
+}
+
+.sponsor-logo,
+.publication-logo {
+  width: calc(
+    50% - 20px
+  ); /* Set width to 50% minus margin for two logos per row */
+  height: 100px; /* Set a fixed height for logos */
+  display: flex; /* Use flexbox for centering text */
+  justify-content: center; /* Center text horizontally */
+  align-items: center; /* Center text vertically */
+  margin: 10px; /* Spacing between logos */
+  border-radius: 8px; /* Rounded corners */
+}
+
+.sponsorship,
+.publication {
+  flex: 1;
+  align-items: left;
+  background-color: white;
+  padding: 10px; /* Add padding */
+}
+
+.key-dates table {
+  width: 100%; /* Full width of the container */
+  border-collapse: collapse; /* Collapse borders for a cleaner look */
+}
+
+.key-dates th,
+.key-dates td {
+  border: none; /* Add border to table cells */
+  padding: 2px; /* Add padding for better spacing */
+  text-align: left; /* Align text to the left */
+}
+
+.key-dates .marker {
+  display: inline-block; /* Ensure it displays inline */
+  width: 5px; /* Width of the square */
+  height: 5px; /* Height of the square */
+  background-color: black; /* Color of the square */
+  margin-right: 5px; /* Space between marker and event text */
+}
+
+.keynotes {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  width: 1000px;
+  background-color: white;
+  font-size: 20px;
+  border-right: 2px solid #ccc;
+  border-bottom: none;
+  border-left: none;
+  border-top: none;
+}
+
+.card-container {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+
+.keynotes-person {
+  height: 350px;
+  align-items: center;
+  border: 2px double #cccccc;
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  margin-right: 5px;
+  padding: 5px;
+}
+
+.keynotes-person p {
+  margin-top: 30px; /* Space between image and text */
+  font-size: 16px; /* Adjust font size */
+  color: #333; /* Text color */
+  text-align: center;
+}
+
+.keynotes-person-image {
+  border-radius: 50%; /* Circular image */
+  overflow: hidden; /* Hide overflow */
+  box-shadow: #333;
+  border: 1px solid #ccc; /* Border around image */
+  width: 150px; /* Fixed width for images */
+  height: 150px; /* Fixed height for images */
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center image */
+  align-items: center; /* Center image */
+}
+
+.keynotes-person-image img {
+  padding: 2px;
+  width: 100%; /* Make image take full width of the container */
+  height: 100%; /* Make image take full height of the container */
+  object-fit: cover; /* Cover the container while maintaining aspect ratio */
+}
+
+.publication-logos .publication-logo img {
+  max-width: 100%; /* Ensures images do not exceed their container */
+  height: auto; /* Maintains aspect ratio */
+  display: block; /* Ensures images are block elements */
+  margin: 0 auto; /* Centers the images */
+}
+
+.past-atis img {
+  align-items: center;
+}
+
+a ::visited {
+  color: purple;
+}
+
+.footer {
+margin-top: 30px;
+  padding: 5px;
+  align-items: center;
+  font-weight: 600;
+  font-size: 15px;
+  color: white;
+  width: 100%;
+  height: 50px;
+  background-color: rgb(5, 87, 211);
+}
+.footer p {
+  text-align: center;
+}

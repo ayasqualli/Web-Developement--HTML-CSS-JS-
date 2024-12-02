@@ -1,0 +1,46 @@
+ul,
+ol {
+  padding-left: 0;
+  list-style: none;
+  display: inline-block;
+  margin-right: 100px;
+}
+
+/* Unordered lists */
+ul.square-green li::before {
+    content: "\25A0"; /* Unicode for square */
+    color: rgb(8, 242, 8); /* Color for square */
+    display: inline-block;
+    width: 1em; /* Adjust for alignment */
+}
+  
+ol.upper-roman {
+    counter-reset: item;
+}
+/* Ordered lists with upper Roman numerals */
+ol.upper-roman li::before {
+  content: counter(item, upper-roman) ". "; /* Roman numeral */
+  counter-increment: item;
+  color: rgb(8, 242, 8); /* Color for numbers */
+}
+
+/* Ordered lists with lower alpha */
+ol.lower-alpha {
+    counter-reset: item;
+}
+ol.lower-alpha li::before {
+  content: counter(item, lower-alpha) ". "; /* Lowercase letters */
+  counter-increment: item;
+  color: rgb(8, 242, 8); /* Color for letters */
+}
+/* Additional colored list (purple squares) */
+
+ul.square-purple li::before {
+  content: "\25A0"; /* Unicode for square */
+  color: purple; /* Color for square */
+  display: inline-block;
+  width: 1em; /* Adjust for alignment */
+}
+
+
+

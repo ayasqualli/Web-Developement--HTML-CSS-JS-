@@ -1,0 +1,68 @@
+.required::after {
+    content: " *";
+    color: red;
+}
+form {
+    text-align: left;
+    width: 800px;
+}
+
+.form-group {
+    width: 70%;
+    margin-bottom: 10px;
+}
+
+.form-group div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    flex: 0 0 120px;  /* Fixed width for labels to align them */
+    text-align: left;
+    margin-right: 10px;
+}
+
+.form-group input {
+    flex: 1; /* Allow the input to take up the remaining space */
+    max-width: 250px;
+    height: 10px; /* Optional, limit the width of inputs */
+    padding: 5px;
+}
+.form-group select{
+    flex:1;
+    max-width: 260px;
+    height: 30px;
+    padding: 5px;
+    border: groove;
+}
+
+.form-group textarea{
+    border: groove;
+    max-width: 250px;
+    flex:1;
+}
+
+.form-actions {
+    justify-content: space-between;
+    width: 50%;
+}
+.form-actions submit{
+    height: 35px;
+    width: 40px; 
+    text-align: center;
+    
+}
+
+input {
+    background-color: #ffffff;
+    color: black;
+    border: groove;
+}
+
+fieldset {
+    width: 800px;
+    padding: 10px;
+}

@@ -1,0 +1,237 @@
+.spacer{
+    height: 50px;
+    width: 100%;
+}
+
+.element-1 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    justify-items: center;
+}
+
+.element-1 h2{
+    font-size: 30px;
+    font-weight: 700;
+    color: #0051da;
+}
+.element-1 p{
+    font-size: 20px;
+    color: #6a6a6a;
+}
+.flexbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px;
+    width: 50%;
+}
+
+.flexbox-item{
+    width: 150px;
+    height: 70px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.grid-div{
+    margin:20px;
+    flex:1;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns:2fr 1fr;
+    grid-template-rows: auto;
+    column-gap: 5px;
+    row-gap: 5px;
+}
+
+.grid-item{
+    padding: 10px;
+    border-radius: 5px;
+    height: 40px;
+    margin: 10px;
+}
+
+.grid-container .item-1{
+    grid-row:span 2;
+}
+
+.item-1{
+    background-color: #ed6a5a;
+    border: 3px solid #cd5e4f
+}
+
+.item-3{
+    background-color: #ffdd5f;
+    border: 3px solid #dcb652;
+}
+
+.item-2{
+    background-color:#8ee29e;
+    border: 3px solid #76bc84;
+}
+
+.element-2{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    width: 100%;
+    color: white;
+}
+
+.navbar{
+    background-color: green;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+
+}
+
+.section-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border: 3px solid #cccccc;
+}
+
+.section-flexbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    flex:1;
+}
+.section-1{
+    background-color: pink;
+    width: 45%;
+    height: 170px;
+    text-align: center;
+    vertical-align: top;
+    margin: 5px;
+}
+.section-2{
+    background-color: red;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 60%;
+    margin: 5px;
+    margin-left: auto;
+}
+
+.section-3{
+    background-color: orange;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    height: 80px;
+}
+
+.footer{
+    background-color: #0051da;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+}
+
+.flexbox-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+}
+
+
+.title{
+    height: 60px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: purple;
+    margin: 5px;
+}
+
+.article{
+    background-color: turquoise;
+    color: black;
+    font-size: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 5px;
+    width: 20%;
+    height: 350px;
+}
+
+.article p{
+   width: 90%;
+   height: auto;
+}
+
+.flexbox-inside{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: turquoise;
+}
+
+.flexbox-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.flexbox-1-item{
+    background-color: beige;
+    color: black;
+    border: 1px solid gray;
+    margin-right : 10px;
+    height: 20px;
+    padding: 2px;
+    width: 200px;
+    text-align:center;
+}
+
+.flexbox-inside-item{
+    background-color: beige;
+    color: black;
+    border: 1px solid gray;
+    margin: 2px;
+    margin-top: 10px;
+    text-align: center;
+    padding: 2px;
+}
+
+.element-4{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100px;
+}
+
+.text{
+    color: white;
+    font-size: 30px;
+    width: calc(40%);
+    height: auto;
+    background-color: #41769c;
+}
+
+.empty{
+    flex:1;
+    background-color : #87ceeb;
+}

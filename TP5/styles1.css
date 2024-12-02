@@ -1,0 +1,42 @@
+.heading{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    color: green;
+    font-weight: 600;
+    text-align: center;
+    border: 3px solid green;
+    background-color: white;
+    width: 600px;
+    height: 60px;
+    margin: auto;
+    display: block;  
+}
+.subheading{
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 600;
+    color: green;
+    text-align: center;
+    margin: auto;
+    display: block;
+
+}
+
+.red-heading{
+    font-size: 30px;
+    color: red;
+    font-weight: 600;
+    text-align: center;
+    border: 2px solid red;
+    background-color: white;
+    width: 600px;
+    height: 35px;
+    margin: auto;
+    display: block;  
+}
+.blue-list{
+    color: blue;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center; 
+}

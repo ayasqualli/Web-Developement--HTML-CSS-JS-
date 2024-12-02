@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page3 </title>
+    <link rel="stylesheet" href="styles3.css">
+</head>
+<body>
+    <!-- Root p element -->
+    <p class="root">Je suis un élément p racine.</p>
+
+    <!-- Root div element with nested content -->
+    <div class="root-div">
+        Je suis un élément div racine.<br>Je suis un élément div enfant d'un élément div racine.
+        
+        <!-- Nested p inside div with additional div parent -->
+        <div>
+            <p class="nested-p">Je suis un élément p, enfant d'un élément div lui-même enfant d'un élément div.</p>
+            <p>je suis la suite de l'élément div enfant d'un élément div.</p>
+        </div>
+    </div>
+
+    <!-- Another root p -->
+    <p class="root">Je suis un élément p racine.</p>
+
+    <!-- Another div root with an ordered list -->
+    <div class="root-div">
+        <p>je suis un div racine</p>
+        <ol>
+            Je suis une liste ordonnée (ol) un enfant d'un div
+            <li>Premier élément li de la liste ordonnée
+                <p>Element p contenu dans le premier élément de liste</p>
+            </li>
+            <li>Deuxième élément de liste</li>
+            <li>Troisième élément de liste</li>
+        </ol>
+        <p class="red">Elément p contenu dans un élément div</p>
+    </div>
+
+    <!-- Final section -->
+     <div class="root-div">
+        Element div racine<br>
+        Dernier élément div racine du document.
+     </div>
+</body>
+</html>
