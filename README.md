@@ -65,8 +65,7 @@ The repository contains multiple lab exercises organized by topic:
 
 1. Clone this repository: 
 ```
-
-git clone [repository-url]
+git clone https://github.com/ayasqualli/Web-Developement--HTML-CSS-JS-.git
 ```
 
 2. Open any HTML file in your web browser to view the examples
