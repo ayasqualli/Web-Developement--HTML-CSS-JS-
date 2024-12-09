@@ -1,12 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>TP2-JavaScript</title>
-        <link rel="stylesheet" href="styles.css">
-        <link rel="script" href="script.js">
-    </head>
-    <body>
-
-    </body>
+  <head>
+    <meta charset="utf-8" />
+    <title>TP2-JavaScript</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <header id="header">Formulaire d'inscription contrôlé côté Client</header>
+    <div class="spacer"></div>
+    <div id="obligatoire">Tous les champs sont obligatoires</div>
+    <main>
+        <div>
+        <form class="form" id="registrationForm" onsubmit="return validateForm(event)">
+          <div class="div-1">
+            <select id="civ" name="civilite">
+              <option value="civ" selected>Civilité</option>
+              <option value="mme">Madame</option>
+              <option value="mr">Monsieur</option>
+            </select>
+            
+            <input id="fname" type="text" placeholder="Votre prénom" />
+            <input id="mail" type="mail" placeholder="Votre mail" />
+            <label>Votre mot de passe: entre 5 et 10 caractères</label>
+            <input id="pswrd" type="password" />
+          </div>
+          <div class="div-2">
+            <input id="lname" type="text" placeholder="Votre nom" />
+            <input id="bdate" type="date" placeholder="Naissance, ex: 19/04/1996">
+            <input id="confirm_mail" type="mail" placeholder="Confirmer votre mail">
+            <label>Confimer votre mot de passe</label>
+            <input id="confirm_pswrd" type="password">
+            <button type="submit">Valider</button>
+        </form>
+    </div>
+    </main>
+  </body>
 </html>
