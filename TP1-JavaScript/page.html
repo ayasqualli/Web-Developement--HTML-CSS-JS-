@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>TP8</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="q1">
+      Bonjour cher étudiants
+      <script>
+        document.write("<b>UM6P-CS</b>");
+      </script>
+    </div>
+    <div class="spacer"></div>
+    <div id="q2">
+      <!--<script>
+            var a = prompt("En quelle année sommes-nous ?");
+            alert("Vous avez répondu: "+a);
+        </script>-->
+    </div>
+    <div class="spacer"></div>
+    <div id="q3">
+      <!--<script>
+        var tableau1 = ["- 10 apples","- 25 oranges"];
+        var tableau2 = ["- 50 grapes", "- 3 bananas", "- 8 lemons"];
+        var tableau1Converti = tableau1.join("<br>");
+        var tableau2Converti = tableau2.join("<br>");
+        document.write("Tableau 1:<br> " + tableau1Converti + "<br>");
+        document.write("Tableau 2:<br> " + tableau2Converti + "<br>");
+
+        var tableauConcatene = tableau1.concat(tableau2);
+        var tableauConcateneConverti = tableauConcatene.join("<br>");
+
+        document.write("Résultat de la concaténation:<br> " + tableauConcateneConverti);
+        </script>-->
+    </div>
+    <div class="spacer"></div>
+    <div id="q4">
+      <form>
+        Vous êtes pour l'informatique ?
+        <input type="radio" name="vote" value="oui">oui
+        <input type="radio" name="vote" value="non">non
+        <input type="radio" name="vote" value="abstention">abstention
+        <input type="button" name="display" value="Résultat" onClick="document.getElementById('result').value = document.querySelector('input[name=vote]:checked').value">
+        <input type="text" name="show" id="result">
+      </form>
+    </div>
+    <div class="spacer"></div>
+    <div id="q5">
+      Date de votre machine:  <script>
+        var date = new Date();
+        var jour = date.getDate();
+        var mois = date.getMonth() + 1; 
+        var annee = date.getFullYear();
+        document.write(jour+"/"+mois+"/"+annee);
+      </script>
+    </div>
+    <div class="spacer"></div>
+    <div id="q6" style="height: 100px; width: 100%;">
+      <p id="text" style="width: fit-content;">Ceci est un avertissement</p>
+      <script>
+      document.getElementById('text').addEventListener('mouseover', function() {
+        this.style.color = 'green';
+        this.style.fontFamily = 'Arial, sans-serif';
+        this.style.fontWeight = '600';
+        this.style.textDecoration = 'underline';
+        this.style.fontSize = '50px';
+        this.style.position = 'absolute';
+        this.style.top = '50%';
+        this.style.left = '50%';
+        this.style.transform = 'translate(-50%, -50%)';
+      });
+
+      document.getElementById('text').addEventListener('mouseout', function() {
+        this.style.color = '';
+        this.style.fontFamily = '';
+        this.style.fontWeight = '';
+        this.style.textDecoration = '';
+        this.style.fontSize = '';
+        this.style.position = '';
+        this.style.top = '';
+        this.style.left = '';
+        this.style.transform = '';
+      });
+      </script>
+    </div>
+  </body>
+</html>
