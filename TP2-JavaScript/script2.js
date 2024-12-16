@@ -7,7 +7,7 @@ const users = [
 
 
 function validateForm(event) {
-    const mail = document.getElementById("mail");
+    const mail = document.getElementById("mail").trim();
     const password = document.getElementById("password");
     let valid = true;
 
