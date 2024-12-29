@@ -1,49 +1,56 @@
 * {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-body{
+
+body {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
 }
 
-.menu-container{
-    margin-left: 50%;
+.menu-container {
+    position: relative;
     display: flex;
     flex-direction: column;
-    flex: 1;
+    width: 200px; /* Fixed width for better control */
+    z-index: 1;
 }
 
-.menu{
-    width: 15%;
-    height: fit-content;
-    color: black;
-    background-color: #cccccc;
+.menu {
+    position: relative;
+    width: 100%;
+    color: white;
+    background-color: rgb(26, 26, 130);
     border: 1px solid black;
     box-shadow: 2px 2px black;
     text-align: center;
     padding: 5px;
     cursor: pointer;
-    margin:2px;
+    margin: 2px;
 }
 
 .sous-menu-container {
     display: none;
+    position: absolute;
+    left: 80%;
+    top: 0;
+    min-width: 150px;
+    z-index: 1000;
 }
 
-.sous-menu{
-    width: 15%;
-    height: fit-content;
-    color: black;
-    background-color: white;
-    border: 1px solid black;
-    box-shadow: 2px 2px black;
+.sous-menu {
+    color: white;
+    background-color: rgb(15, 15, 126);
+    border: 1px solid #cccc;
     text-align: center;
     padding: 5px;
-    overflow: hidden;
 }
 
-.active, .menu:hover {
+.active {
     background-color: #848383;
-  }
+}
+
+.menu:hover {
+    background-color: #848383;
+}

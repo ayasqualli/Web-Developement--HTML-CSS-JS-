@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>DS2</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div class="header">
+            <div class="link">Aller au contenu</div>
+                <img src="logo_msp.jpg">
+            </div>
+        </div>
+        <div class="links">
+            <a href="#">Plan du site</a>
+            <a href="#">Foire aux questions</a>
+        </div>
+        <div class="spacer"></div>
+        <div class="main">
+            <div class="nav-links">
+                <a href="#" style="font-weight: 500;">Accueil</a>
+                <a href="#" style="text-decoration: none;">> Création de mon compte</a>
+            </div>
+            <div class="form-container">
+                <div class="form-banner">CREATION DE MON COMPTE</div>
+                <p>Le symbole<span style="color: red; margin-left: 2px; margin-right: 2px;"> * </span> est indiqué devant les champs obligatoires.</p>
+                <div class="form">
+                    <div class="form-section">
+                        <div class="form-row">
+                            <label><span class="required">*</span> Identifiant :</label>
+                            <input type="text">
+                            <span class="hint">De 4 à 30 caractères alphanumériques.</span>
+                        </div>
+                        
+                        <div class="form-row">
+                            <label><span class="required">*</span> Mot de passe :</label>
+                            <input type="password">
+                            <span class="hint">De 8 à 20 caractères, avec au moins une lettre et un chiffre</span>
+                        </div>
+                        
+                        <div class="form-row">
+                            <label><span class="required">*</span> Répétez votre mot de passe :</label>
+                            <input type="password">
+                        </div>
+                        
+                        <div class="form-row">
+                            <label><span class="required">*</span> Adresse électronique :</label>
+                            <input type="email">
+                            <span class="hint">Exemple: antoine@free.fr, franck@hotmail.com</span>
+                        </div>
+
+                        <div class="info-box">
+                            <div class="info-title">A quoi ça sert ?</div>
+                            <p class="info-text">
+                                Votre identifiant et votre mot de passe vous permettent d'accéder à votre compte.<br>
+                                Ces informations sont personnelles, ne les transmettez à personne !
+                            </p>
+                        </div>
+                    </div>
+
+                        <div class="checkbox-group">
+                            <div class="checkbox-row">
+                                <input type="checkbox">
+                                <label>Je désire recevoir les informations des partenaires mon.service-public.fr dans ma boîte électronique.</label>
+                            </div>
+                            <div class="checkbox-row">
+                                <input type="checkbox">
+                                <label>Je désire recevoir les actualités mon.service-public.fr dans ma boîte électronique.</label>
+                            </div>
+                        </div>
+                    
+
+                    <div class="form-row">
+                        <label><span class="required">*</span> Recopier les caractères de l'image :</label>
+                        <input type="text">
+                        <img src="captcha.jpg" alt="captcha" class="captcha-image">
+                        <div class="captcha-links">
+                            <a href="#">Changer l'image</a>
+                            <a href="#">Vous êtes mal-voyant ?</a>
+                        </div>
+                    </div>
+
+                    <div class="checkbox-row">
+                        <input type="checkbox">
+                        <label>J'accepte les <a href="#">conditions générales d'utilisation</a>.</label>
+                    </div>
+
+                    <div class="button-group">
+                        <button class="validate">Valider</button>
+                        <button class="cancel">Annuler</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </body>
+</html>

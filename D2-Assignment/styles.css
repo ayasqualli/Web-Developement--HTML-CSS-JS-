@@ -1,0 +1,236 @@
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+body{
+    background-color:#edf2f7;
+}
+
+.spacer{
+    width: 100%;
+    height: 60px;
+}
+
+.header{
+    width: 100%;
+    height: 100px;
+    display: flex; 
+    align-items: left;
+    flex-direction: column;
+    margin: 10px; 
+    padding: 5px;
+}
+
+.header img{
+    margin: 5px;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 500px;
+    height: auto;
+}
+
+.link{
+    margin: 10px;
+    margin-bottom: 5px;
+    color: rgb(26, 26, 70);
+    font-weight: 600;
+
+}
+
+.links{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; /* Added to move links to the right */
+    align-items: right;
+}
+
+.links a {
+    position: relative;
+    top: 100%;
+    left: 0;
+    padding-left: 20px; /* Space for the arrow */
+    text-decoration: none;
+    color: rgb(78, 78, 183);
+    font-weight: 500;
+    margin-right: 20px; /* Added spacing between right-aligned links */
+}
+
+.links a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top:25%;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+    border-top: 2px solid #0066cc; 
+    border-right: 2px solid #0066cc;
+    transform: rotate(45deg);
+}
+
+.main{
+    width: 80%;
+    border: 2px groove #a2becc;
+    background-color: white;
+    margin: 50px;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+}
+
+.nav-links{
+    display: flex;
+    align-items: flex-start;
+    margin-left: 10px;
+    justify-content: flex-start;
+    align-self: flex-start;
+    width: 100%;
+}
+
+.nav-links a{
+    color: rgb(78, 78, 183);
+}
+
+.form-container{
+    width: 90%;
+    border: 2px double rgb(209, 209, 209);
+    margin: 30px;
+}
+
+.form-banner{
+    width: 98,7%;
+    height: fit-content;
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    background-color: #44728a;
+    padding: 5px;
+    padding-left: 10px;
+}
+
+p{
+    display: flex;
+    align-items: flex-start;
+    margin-left: 10px;
+    justify-content: flex-start;
+    align-self: flex-start;
+    width: 100%;
+}
+
+.form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.form-row {
+    display: flex;
+    margin-bottom: 15px;
+    align-items: flex-start;
+}
+
+.form-row label {
+    width: 200px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.required {
+    color: red;
+    margin-right: 3px;
+}
+
+.hint {
+    color: #666;
+    margin-left: 10px;
+    font-size: 0.9em;
+}
+
+.info-box {
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 15px 0;
+    width: 300px;
+    position: absolute;
+    right: 50px;
+}
+
+.info-title {
+    color: #44728a;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.checkbox-group {
+    margin: 15px 0;
+}
+
+.checkbox-row {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+    margin-left: 200px;
+}
+
+.checkbox-row input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.captcha-image {
+    margin: 0 10px;
+}
+
+.captcha-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.captcha-links a {
+    color: #44728a;
+    text-decoration: none;
+    margin: 2px 0;
+}
+
+.button-group {
+    margin-top: 20px;
+    margin-left: 200px;
+    margin-right: 50px;
+    display: flex;
+    align-self: flex-end;
+}
+
+button {
+    padding: 5px 15px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+button.validate {
+    background-color: #44728a;
+    color: white;
+    border: none;
+}
+
+button.cancel {
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    padding: 2px 5px;
+    width: 200px;
+}
+
+.form-section {
+    border: 2px solid #a2becc; /* Border for the first part of the form */
+    padding: 20px;
+    margin-bottom: 20px; /* Space between sections */
+}
