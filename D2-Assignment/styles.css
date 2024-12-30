@@ -72,13 +72,14 @@ body{
 
 .main{
     width: 80%;
+    margin: 0 auto;
     border: 2px groove #a2becc;
     background-color: white;
-    margin: 50px;
-    margin-top: 0;
     display: flex;
     flex-direction: column;
     padding: 10px;
+    padding-right: 80px;
+    padding-left: 80px;
     align-items: center;
 }
 
@@ -96,9 +97,10 @@ body{
 }
 
 .form-container{
-    width: 90%;
+    width: 100%;
     border: 2px double rgb(209, 209, 209);
     margin: 30px;
+    background-color: #eff4f7;
 }
 
 .form-banner{
@@ -106,13 +108,13 @@ body{
     height: fit-content;
     color: white;
     font-weight: 600;
-    font-size: 15px;
+    font-size: 20px;
     background-color: #44728a;
     padding: 5px;
     padding-left: 10px;
 }
 
-p{
+.form-container p{
     display: flex;
     align-items: flex-start;
     margin-left: 10px;
@@ -126,6 +128,9 @@ p{
     display: flex;
     flex-direction: column;
     padding: 20px;
+    padding-left: 0;
+    color: #2b5972;
+    font-weight: 400;
 }
 
 .form-row {
@@ -153,13 +158,15 @@ p{
 
 .info-box {
     background-color: #f5f5f5;
-    border: 1px solid #ddd;
+    border: 2px double #a6c1ce;
     padding: 10px;
     margin: 15px 0;
-    width: 300px;
+    width: 250px;
     position: absolute;
-    right: 50px;
+    right: 200px;
+    top: 45%;
 }
+
 
 .info-title {
     color: #44728a;
@@ -180,6 +187,7 @@ p{
 
 .checkbox-row input[type="checkbox"] {
     margin-right: 10px;
+    border: 2px double #ddd; /* We can't change the appearance of the checkbox unless we hide the built-in checkbox and make one from scratch */
 }
 
 .captcha-image {
@@ -202,13 +210,15 @@ p{
     margin-left: 200px;
     margin-right: 50px;
     display: flex;
-    align-self: flex-end;
+    align-self: center;
+    justify-content: center;
 }
 
 button {
     padding: 5px 15px;
     margin-right: 10px;
     border-radius: 5px;
+    width:100px;
 }
 
 button.validate {
@@ -227,10 +237,45 @@ input[type="password"],
 input[type="email"] {
     padding: 2px 5px;
     width: 200px;
+    border: 2px double #a1becc;
 }
 
 .form-section {
-    border: 2px solid #a2becc; /* Border for the first part of the form */
+    width: 90%;
+    margin: 30px;
+    border: 2px solid #a2becc;
     padding: 20px;
-    margin-bottom: 20px; /* Space between sections */
+    margin-bottom: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+    
+}
+
+.footer {
+    padding: 20px;
+    text-align: center; 
+    font-size: 14px; 
+    color: #333;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-links {
+    margin-bottom: 10px; 
+}
+
+.footer-links a {
+    color: rgb(78, 78, 183);
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer p{
+    text-align: center;
+    margin: 0;
 }
