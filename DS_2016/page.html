@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>TP</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <img
+        src="logo_sorbonne.png"
+        alt="Université Paris-Sorbonne Logo"
+        id="image"
+      />
+      <script>
+document.getElementById('image').addEventListener('mouseover', function() {
+    this.style.position = 'absolute';
+    this.style.zIndex = '10';
+    this.style.left = '70%';
+    this.style.transform = 'translate(0, 0)';
+}); // Added missing closing parenthesis
+
+document.getElementById('image').addEventListener('mouseout', function() {
+    this.style.position = '';
+    this.style.zIndex = '';
+    this.style.left = '';
+    this.style.transform = '';
+});
+      </script>
+      <div class="title">
+        <div class="languages">
+          <a class="lang">English</a>
+          <a class="lang">Español</a>
+        </div>
+        <div class="main-title">Université Paris-Sorbonne</div>
+        <div class="sub-title">Lettres et civilisations</div>
+      </div>
+      <div class="search-section">
+        <div class="bar">
+          <input type="text" placeholder="Rechercher" aria-label="Search" />
+          <button type="submit">Rechercher</button>
+        </div>
+        <div class="empty-search"></div>
+      </div>
+    </header>
+    <dic class="main">
+      <div class="left-side">
+        <div class="sidebar">
+          <h3 style="border-top: none; border-bottom: 3px solid black">
+            L'UNIVERSITÉ
+          </h3>
+          <h4
+            style="
+              background-color: #960c7b;
+              color: white;
+              padding: 5px;
+              padding: 5px;
+              margin-bottom: 0;
+            "
+          >
+            LES FORMATIONS
+          </h4>
+          <ul>
+            <li>Offre de formation</li>
+            <li>Inscription</li>
+            <li style="color: #960c7b; font-weight: 500">
+              La formation continue
+            </li>
+            <li>L'université d'été</li>
+            <li>L'université inter-âges</li>
+            <li>Orientation et insertion</li>
+            <li>Scolarité</li>
+            <li>MOOC</li>
+          </ul>
+          <h3>LA RECHERCHE</h3>
+          <h3>MA VIE ÉTUDIANTE</h3>
+          <h3>L'INTERNATIONAL</h3>
+          <h3>LES BIBLIOTHÈQUES</h3>
+          <h3>LES ACTUALITÉS</h3>
+          <div class="acces-direct">
+            <h3>ACCÈS DIRECT …</h3>
+            <ul>
+                <li>Inscription</li>
+                <li>L'offre de formation</li>
+                <li>UFR</li>
+                <li>Entreprise</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="content-center">
+        <div class="content-links">
+          <p>
+            Accueil du site > les formations > la formation continue >
+            inscription
+          </p>
+          <div class="inscription">
+            <div class="black-div"></div>
+            <div class="text">Inscription</div>
+          </div>
+        </div>
+        <div class="topics">
+          <div class="particuliers">Particuliers</div>
+          <div class="entreprises">Entreprises</div>
+          <div class="tests">Tests de niveau</div>
+        </div>
+        <div class="main-text">
+          <h3>Particuliers</h3>
+          <p>
+            Vous pouvez vous inscrire, en vous munissant d’une photo directement
+            auprès de notre service ou par correspondance en téléchargeant le
+            bulletin d’inscription. Vous nous le retournerez complété,
+            accompagné d’une photo et de votre règlement par chèque, à l’ordre
+            de l’agent comptable de Paris-Sorbonne.
+          </p>
+          <p>
+            <strong>Une réduction de 10 %</strong> est accordée aux étudiants, demandeurs
+            d’emploi, anciens stagiaires de l’année 2014/2015 et pour une
+            inscription à un deuxième stage (si les tarifs sont différents, la
+            réduction portera sur le tarif le moins élevé).
+          </p>
+          <p>
+            <strong>Une réduction de 20 %</strong>est accordée aux agents de l’Université
+            Paris-Sorbonne, aux étudiants de Sorbonne Université et pour une
+            inscription à un troisième stage.
+          </p>
+          <p>
+            <strong>
+              Un justificatif, en cours de validité, doit être fourni pour
+              bénéficier de la réduction.</strong
+            >
+          </p>
+          <p>
+            Les demandeurs d’emploi peuvent mobiliser le DIF portable auprès de
+            Pôle Emploi, sur la base d’un devis.
+          </p>
+          <p>
+            Il est possible de régler par chèque ou par carte bancaire
+            (uniquement dans nos locaux) à l’inscription en 3 fois sans frais
+            (sous conditions).
+          </p>
+          <p>
+            Dans tous les cas, l’inscription n’est effective qu’avec la remise
+            du règlement.
+          </p>
+          <p> Les conditions générales de vente sont disponibles au verso du bulletin d’inscription
+            ou du bon de commande.</p>
+            <p style="text-align: center; text-decoration: underline; font-size: 20px; font-weight: 600; margin-bottom: 60px;">Bulletin d'inscription</p>
+        </div>
+      </div>
+      <div class="side-right">
+        <div class="side-title">NOS HORAIRES</div>
+        <p>Nous vous accueillons du lundi au jeudi de 9h à 18h et le vendredi de 9h à 17h30, sans interruption.</p>
+        
+        <div class="side-title">ACTUALITÉS</div>
+        <p style="text-align: center; font-weight: 500; color: black;">Le service de formation continue sera fermé vendredi 8 janvier après-midi.</p>
+        <p style="text-align: center; font-weight: 500; color: black;">Merci de votre compréhension.</p>
+        
+        <p style="text-align: center; font-weight: 500; color: black;">--------------------</p>
+        
+        <p style="text-align: center; font-weight: 500; color: black;">1ère Journée Sorbonne Philosophie - Entreprise</p>
+        <p style="text-align: center; font-weight: 500; color: black;">19 janvier 2016</p>
+        <p style="text-align: center; font-weight: 500; color: black;">09h00 - 17h45</p>
+        <p style="text-align: center; font-weight: 500; "><a href="#" style="color: #333;">Consultez le programme</a></p>
+        
+        <p style="text-align: center; font-weight: 500;">--------------------</p>
+        
+        <p style="font-weight: 500; color: black;">Un nouveau diplôme en formation continue : DU Gestion de projets et communication éditoriale</p>
+        <p style="font-weight: 500; color: #333;">Maîtrisez les stratégies de contenus éditoriaux.</p>
+        <p>Un parcours en alternance, un cursus certifiant (Niveau licence).</p>
+      </div>
+    </dic>
+  </body>
+</html>

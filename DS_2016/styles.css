@@ -1,0 +1,257 @@
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.header{
+    background-color: #960c7c;
+    display: flex;
+}
+
+.header img{
+    margin: 0 10px;
+    margin-top: 10px;
+}
+
+.title {
+    color: white;
+    text-align: center;
+    border-right: 2px dotted #c8c8c8;
+    border-left: 2px dotted #c8c8c8;
+    margin-right: 0;
+    width: 60%;
+}
+
+.main-title{
+    display: flex;
+    color: white;
+    font-size: 40px;
+    font-weight: 500;
+    align-items: flex-start;
+    padding: 5px;
+}
+
+.sub-title{
+    background-color: #b655a4;
+    border-top: 2px dotted #c8c8c8;
+    border-bottom: 2px dotted #c8c8c8;
+    align-self: flex-start;
+    text-align: left;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.languages {
+    display: flex;
+    gap: 10px;
+    color: black;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-right: 10px;
+    font-weight: 600;
+}
+
+.search-section {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    flex: 1;
+}
+
+.bar {
+    background-color: #b655a4;
+    border-top: 2px dotted #c8c8c8;
+    border-bottom: 2px dotted #c8c8c8;
+    padding: 5px;
+    margin: 0;
+    flex:1;
+    padding-left: 150px;
+}
+
+input[type="text"] {
+    padding: 5px;
+    border: none;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.empty-search{
+    background-color: #d59ecb;
+    width: 100%;
+    height: 32%;
+}
+
+.main{
+    display: flex; 
+    flex-direction: row;
+
+}
+
+.left-side{
+    width: 30%;
+    border-right: 2px dotted #c8c8c8;
+}
+
+.sidebar {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-right: 2px dotted #c8c8c8;
+}
+
+.sidebar h2, .sidebar h3 {
+    margin: 10px 0;
+    border-top: 3px solid black;
+    font-weight: 350;
+}
+
+.sidebar ul {
+    margin-left: 80px;
+    list-style-type: square #960c7b;
+    padding: 0;
+}
+
+.sidebar li {
+    margin: 5px 0;
+    border-top: 2px dotted #c8c8c8;
+}
+
+.sidebar ul li::marker {
+    color: #960c7c;
+}
+
+.acces-direct {
+    background-color: #f0f0f0; 
+    padding: 10px;
+}
+
+.acces-direct h3 {
+    background-color: #333; /* Dark background for the title */
+    color: white;
+    padding: 10px;
+    margin: 0;
+}
+
+.acces-direct ul {
+    margin-left: 0;
+    list-style-type: disc;
+    padding: 10px;
+    background-color: #cdcccb;
+}
+
+.acces-direct li {
+    padding: 5px;
+    border-bottom: 1px dotted #c8c8c8;
+}
+
+.sidebar ul li::marker {
+    color: black;
+}
+
+.content-center{
+    margin: 5px;
+}
+
+.content{
+    border: 10px solid #d69bcc;
+    width: 60%;
+}
+
+.content-links p{
+    margin: 5px;
+}
+
+.inscription
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.black-div{
+    background-color: black;
+    width: 150px;
+    height: 15px;
+    margin: 15px;
+}
+
+.text{
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.topics{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    margin-bottom: 0;
+}
+
+.particuliers{
+    width: 33%;
+    height: 80px;
+    color: black;
+    background-color: #d69bcc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.entreprises{
+    width: 33%;
+    height: 80px;
+    color: white;
+    background-color: #b654a4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 20px;
+    border-right: 2px dotted #c8c8c8;
+    border-left: 2px dotted #c8c8c8;
+}
+
+.tests{
+    width: 33%;
+    height: 80px;
+    color: white;
+    background-color: #b654a4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.main-text{
+    border: 10px solid #d69bcc;
+    margin: 10px;
+    margin-top: 0;
+    padding: 10px;
+    color: #333333;
+}
+
+.side-right {
+    padding: 10px;
+    margin: 10px;
+    margin-top: 40px;
+}
+
+.side-title {
+    background-color: #960c7b;
+    color: white;
+    padding: 5px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.side-right p {
+    margin: 5px 0;
+    color: #333;
+}
+
