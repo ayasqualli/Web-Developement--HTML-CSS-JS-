@@ -13,6 +13,7 @@
 }
 
 .title {
+    font-family:Times, serif;
     color: white;
     text-align: center;
     border-right: 2px dotted #c8c8c8;
@@ -22,15 +23,17 @@
 }
 
 .main-title{
+    font-family:'Times New Roman', Times, serif;
     display: flex;
     color: white;
-    font-size: 40px;
+    font-size: 45px;
     font-weight: 500;
     align-items: flex-start;
     padding: 5px;
 }
 
 .sub-title{
+    font-family:'Times New Roman', Times, serif;
     background-color: #b655a4;
     border-top: 2px dotted #c8c8c8;
     border-bottom: 2px dotted #c8c8c8;
@@ -129,23 +132,41 @@ button {
     padding: 10px;
 }
 
-.acces-direct h3 {
-    background-color: #333; /* Dark background for the title */
+.acces-direct h4 {
+    position: relative; /* Positioning context for the triangle */
+    background-color: #333;
     color: white;
-    padding: 10px;
+    padding: 10px 10px 10px 20px;
     margin: 0;
+    height: 20px;
+    width: 90%;
+    font-weight: 300; 
 }
+
+.acces-direct h4::before {
+    content: '';
+    position: absolute;
+    left: 10px; /* Adjust as needed for spacing */
+    top: 50%;
+    transform: translateY(-50%);
+    border-top: 8px solid transparent; /* Creates the triangle */
+    border-bottom: 8px solid transparent; /* Creates the triangle */
+    border-left: 8px solid white; /* Color of the triangle */
+}
+
 
 .acces-direct ul {
     margin-left: 0;
     list-style-type: disc;
-    padding: 10px;
+    padding: 5px;
     background-color: #cdcccb;
 }
 
 .acces-direct li {
     padding: 5px;
     border-bottom: 1px dotted #c8c8c8;
+    height: 20px;
+    margin-top: 0;
 }
 
 .sidebar ul li::marker {
